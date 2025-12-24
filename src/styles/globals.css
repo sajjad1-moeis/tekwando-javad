@@ -81,9 +81,21 @@
 }
 
 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .liner-btn {
@@ -118,4 +130,178 @@
 .animate-fade-in-delay-2 {
   animation: fade-in 0.8s ease-out 0.6s forwards;
   opacity: 0;
+}
+
+/* React Multi Date Picker Custom Styles */
+.rmdp-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  background-color: transparent !important;
+  overflow: hidden !important;
+}
+
+.rmdp-calendar {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+}
+
+.custom-calendar {
+  background-color: #1a1a1a !important;
+}
+
+.rmdp-day-picker,
+.rmdp-calendar,
+.rmdp-day-picker:first-child div {
+  background-color: transparent !important;
+  width: 100% !important;
+}
+
+.rmdp-day {
+  color: #c0c0c0 !important;
+  border-radius: 0.5rem !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  position: relative !important;
+}
+
+.rmdp-day:hover {
+  background-color: transparent !important;
+  background: transparent !important;
+  color: #c0c0c0 !important;
+}
+
+.rmdp-day.rmdp-day-active {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: 1px solid #44d879 !important;
+  color: #44d879 !important;
+  font-weight: 600 !important;
+  border-radius: 100% !important;
+}
+
+.rmdp-day.rmdp-selected {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: 1px solid #44d879 !important;
+  color: #44d879 !important;
+  border-radius: 100% !important;
+}
+
+/* غیرفعال کردن background آبی در حالت‌های مختلف */
+.rmdp-day.rmdp-selected:hover,
+.rmdp-day.rmdp-range,
+.rmdp-day.rmdp-range:hover,
+.rmdp-day.rmdp-today:hover,
+.rmdp-day.rmdp-day-active:hover,
+.rmdp-day.rmdp-hover,
+.rmdp-day.rmdp-hover:hover {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+.rmdp-day-with-event::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 100% !important;
+}
+
+.rmdp-day-with-event[data-event-color="green"]::after {
+  background-color: #44d879 !important;
+}
+
+.rmdp-day-with-event[data-event-color="yellow"]::after {
+  background-color: #eab308 !important;
+}
+
+.rmdp-day-with-event[data-event-color="red"]::after {
+  background-color: #b93335 !important;
+}
+
+.rmdp-week-day {
+  color: #a0a0a0 !important;
+  font-weight: 600 !important;
+  font-size: 0.75rem !important;
+}
+.rmdp-week,
+.rmdp-ym {
+  gap: 10px;
+}
+
+.rmdp-header-values {
+  color: white !important;
+}
+
+/* مخفی کردن header تقویم */
+.rmdp-header,
+.rmdp-header-values,
+.rmdp-arrow-container {
+  display: none !important;
+}
+
+.rmdp-arrow {
+  border-color: #a0a0a0 !important;
+}
+
+.rmdp-arrow-container:hover {
+  background-color: #2a2a2a !important;
+  box-shadow: none !important;
+}
+
+.rmdp-month-picker,
+.rmdp-year-picker {
+  background-color: #2a2a2a !important;
+  border: 1px solid #3a3a3a !important;
+}
+
+.rmdp-month-picker div,
+.rmdp-year-picker div {
+  color: white !important;
+}
+
+.rmdp-month-picker div:hover,
+.rmdp-year-picker div:hover {
+  background-color: #3a3a3a !important;
+}
+
+.rmdp-day.rmdp-today span,
+.rmdp-day.rmdp-selected span:not(.highlight) {
+  background-color: transparent !important;
+  color: #44d879 !important;
+  box-shadow: none;
+}
+
+.background-sidebar {
+  background: linear-gradient(0deg, #1c1c1c, #1c1c1c),
+    linear-gradient(0deg, rgba(28, 28, 28, 0.9), rgba(28, 28, 28, 0.9));
+}
+
+.blur-box {
+  backdrop-filter: blur(8px);
+}
+
+/* Slick Slider Custom Styles */
+.slick-slider {
+  position: relative;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.slick-arrow {
+  display: none !important;
 }

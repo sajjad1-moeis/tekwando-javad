@@ -51,22 +51,22 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        bg: "#1C1C1C",
+        body: "#C7C7C7",
+        sidebar: "#262626",
+        caption: "#747474",
         dark: {
           header: "#202020",
           title: "#B3B3FF",
           box: "#373737",
           text: "#A7A4A4",
-          bg: "#262626",
+          bg: "#2c2c2c",
           titre: "#D2D2D2",
           field: "#FDFBF7",
-          sidebar: "#1F1F1F",
           stroke: "#686869",
           primary: "#3F51B5",
         },
-        red: {
-          400: "#F98080",
-          500: "#F05252",
-        },
+
         gray: {
           50: "#F9FAFB",
           100: "#F3F4F6",
@@ -77,20 +77,13 @@ export default {
           600: "#4B5563",
           700: "#374151",
         },
-        yellow: {
-          400: "#FFCD38",
-          500: "#F9CE2E",
-          600: "#D19D00",
-          700: "#9D7600",
-        },
 
         green: {
-          200: "#BCF0DA",
+          400: "#2ECC71",
           500: "#27C343",
           600: "#057A55",
         },
-        titre: "#2D323A",
-        caption: "#888A8C",
+
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -101,19 +94,7 @@ export default {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-        primary: {
-          50: "#EDEFF7",
-          100: "#DBDEEF",
-          200: "#B6BCDF",
-          300: "#8995D6",
-          400: "#6171C8",
-          500: "#0B2A9C",
-          600: "#324191",
-          700: "#26316D",
-          800: "#1C2247",
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
+
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
