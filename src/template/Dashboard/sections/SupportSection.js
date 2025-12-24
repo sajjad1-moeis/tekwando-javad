@@ -5,7 +5,7 @@ import { Whatsapp } from "iconsax-reactjs";
 export default function SupportSection() {
   return (
     <div className="bg-sidebar rounded-2xl p-3">
-      <div className="flex items-center justify-between gap-6">
+      <div className="md:flex items-center justify-between gap-6">
         {/* Right Side - Title and Description */}
         <div className="flex flex-col gap-2">
           <h3 className="text-lg  text-white">نیاز به راهنمایی دارید؟</h3>

@@ -305,3 +305,7 @@
 .slick-arrow {
   display: none !important;
 }
+
+.liner-slider {
+  background: linear-gradient(180deg, rgba(34, 34, 34, 0.32) 0%, rgba(34, 34, 34, 0.88) 81.37%);
+}
